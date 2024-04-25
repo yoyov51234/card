@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.MyShadow {
+  box-shadow: 10px 10px black;
+
+}
+
+.MyShadowDefault {
+  box-shadow: 5px 5px black;
+}
