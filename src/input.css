@@ -13,3 +13,19 @@
 .MyShadowDefault {
   box-shadow: 5px 5px black;
 }
+
+@layer components {
+  .profile_button {
+    @apply w-full h-[45px] bg-profile_project_Grey p-[12px] text-profile_project_white rounded-lg font-bold text-[14px]
+  }
+
+  .profile_button:hover {
+    @apply bg-profile_project_primary text-profile_project_Grey
+  }
+}
+
+
+@font-face {
+  font-family: "Inter";
+  src: url(../project_profile/assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
