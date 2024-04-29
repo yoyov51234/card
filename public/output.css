@@ -1136,6 +1136,11 @@ video {
     padding-bottom: 6rem;
   }
 
+  .sm\:py-\[123px\]{
+    padding-top: 123px;
+    padding-bottom: 123px;
+  }
+
   .sm\:pt-10{
     padding-top: 2.5rem;
   }
