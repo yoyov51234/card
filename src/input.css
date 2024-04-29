@@ -29,3 +29,34 @@
   font-family: "Inter";
   src: url(../project_profile/assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
 }
+
+@font-face {
+  font-family: "YoungSerif";
+  src: url(../projects/05recipe/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url(../projects/05recipe/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+.recipe-section h2 {
+  @apply text-[28px] text-p_recipe_Dark_Raspberry mb-6 font-YoungSerif
+}
+
+.recipe-section {
+  @apply mb-6 mt-6
+}
+
+.mygrid div {
+  /* @apply flex justify-start text-left border-b border-recipe_white_coffee h-12 flex-wrap items-center px-8 */
+  @apply grid grid-cols-2 h-12 items-center border-b border-recipe_white_coffee px-8
+}
+
+.mygrid div span:nth-child(2) {
+  @apply pl-4 text-p_recipe_Dark_Raspberry font-bold
+}
+
+.myul li {
+  @apply pl-4 mb-1
+}
