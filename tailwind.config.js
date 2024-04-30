@@ -29,19 +29,27 @@ module.exports = {
         recipe_neutral_off_black: 'hsl(0, 0%, 8%)',
         recipe_neutral_Dark_Charcoal: 'hsl(24, 5%, 18%)',
         recipe_white_coffee: '#E3DDD7',
+        product_preview_dark_cyan: 'hsl(158, 36%, 37%)',
+        product_preview_Cream: 'hsl(30, 38%, 92%)',
+        product_preview_very_dark_blue: 'hsl(212, 21%, 14%)',
+        product_preview_dark_grayish_blue: 'hsl(228, 12%, 48%)',
 
       },
       fontFamily: {
         body: ['Figtree'],
         customFont: ['Inter'],
         YoungSerif: ['YoungSerif'],
-        Outfit: ['Outfit']
+        Outfit: ['Outfit'],
+        Fraunces: ['Fraunces'],
+        Montserrat: ['Montserrat'],
+
         // Inter: []
       },
       screens: {
         'mobile320': '320px',
         'tablet': '384px',
         'srecipe736': '736px',
+        'screen600': '600px'
       }
     },
   },
