@@ -98,6 +98,7 @@ $pureWhite: #FFF;
         line-height: 2rem;
         font-weight: bold;
         color: $Deep_Aquamarine;
+        font-family: Fraunces;
       }
 
       .product_price_old {
@@ -120,6 +121,25 @@ $pureWhite: #FFF;
       padding-top: 1em;
       padding-bottom: 1em;
       border-radius: 0.5rem;
+
+
+      .cart_word {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+
+      .cart_word::before {
+        content: url('./images/icon-cart.svg');
+        display: inline-block;
+        margin-inline-end: 0.725625em;
+        // line-height: 100%;
+        // line-height: 150%;
+
+
+
+      }
     }
 
 

@@ -59,6 +59,7 @@
   line-height: 2rem;
   font-weight: bold;
   color: #3D8168;
+  font-family: Fraunces;
 }
 .container .product_details .product_price .product_price_old {
   margin-left: 1.1875rem;
@@ -75,6 +76,16 @@
   padding-top: 1em;
   padding-bottom: 1em;
   border-radius: 0.5rem;
+}
+.container .product_details .cart_btn .cart_word {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .product_details .cart_btn .cart_word::before {
+  content: url("./images/icon-cart.svg");
+  display: inline-block;
+  margin-inline-end: 0.725625em;
 }
 
 @media (min-width: 400px) {

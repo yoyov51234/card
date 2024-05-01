@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box {
+      width: 250px;
+    }
+
+    .cart-btn {
+      width: 100%;
+      padding-top: 1em;
+      padding-bottom: 1em;
+      border-radius: 0.5rem;
+      color: white;
+      background-color: goldenrod;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .cart_word::before {
+      content: url('../vanillaCss/01responsive/images/icon-cart.svg');
+      padding-right: 0.7em;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <button class="cart-btn">
+      <span class="cart_word">Add to Cart</span>
+    </button>
+  </div>
+
+</body>
+
+</html>
