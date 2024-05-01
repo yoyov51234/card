@@ -14,10 +14,17 @@
   <div class="container">
     <main class="product_card">
       <div class="product_pic_container">
-        <img class="pics_mobile" src="./images/image-product-mobile.jpg" alt="">
+        <!-- <img class="pics_mobile" src="./images/image-product-mobile.jpg" alt="">
         </img>
         <img class="pics_desktop" src="./images/image-product-desktop.jpg" alt="">
-        </img>
+        </img> -->
+        <picture>
+
+          <source media="(max-width: 399px) " srcset="./images/image-product-mobile.jpg">
+          <source media="(min-width: 400px) " srcset="./images/image-product-desktop.jpg">
+
+          <img src="./images/favicon-32x32.png" alt="favicon">
+        </picture>
       </div>
       <div class="product_details">
         <p class="product_category">PERFUME</p>

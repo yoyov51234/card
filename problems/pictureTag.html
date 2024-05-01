@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    @media (max-width:300px) {}
+
+    @media (max-width: 600px) {}
+
+    body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* picture {
+      width: 100%;
+    } */
+
+    picture img {
+      /* width: 100%;
+      height: auto; */
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <picture>
+
+      <source media="(min-width:400px)" srcset="../vanillaCss/01responsive/images/image-product-desktop.jpg">
+      <source media="(max-width:400px)" srcset="../vanillaCss/01responsive/images/image-product-mobile.jpg">
+
+      <img src="../vanillaCss/01responsive/images/favicon-32x32.png" alt="Example image">
+      <!-- <img src="../vanillaCss/01responsive/images/image-product-mobile.jpg" alt="Example image"> -->
+    </picture>
+
+  </div>
+
+</body>
+
+</html>
