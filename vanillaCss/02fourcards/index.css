@@ -116,6 +116,13 @@ body {
   }
 }
 @media (min-width: 1204px) {
+  .container {
+    margin-left: 10.3125em;
+    margin-right: 10.3125em;
+    margin-top: 5em;
+    margin-bottom: 5em;
+    padding: 0;
+  }
   .container .cards-section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -123,6 +130,7 @@ body {
   }
   .container .cards-section .card {
     margin: 0em;
+    margin: auto;
   }
   .container .cards-section .card .card-inside {
     margin-bottom: 0;
