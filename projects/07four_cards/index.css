@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bgc: #F2F2F2;
+  --Pwhite: #FFFFFF;
+  font-family: Poppins;
+  --p-Red: hsl(0, 78%, 62%);
+  --p-Cyan: hsl(180, 62%, 55%);
+  --p-Orange: hsl(34, 97%, 64%);
+  --p-Blue: hsl(212, 86%, 64%);
+  --Very-Dark-Blue: hsl(234, 12%, 34%);
+  --Grayish-Blue: hsl(229, 6%, 66%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+body {
+  background: var(--bgc);
+}
+
+.container {
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 5.3125em;
+  padding-bottom: 4.875em;
+  min-width: 320px;
+}
+.container .info {
+  display: flex;
+  max-width: 540px;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  flex-shrink: 1;
+  margin-bottom: 4.75rem;
+  text-align: center;
+}
+.container .info .good_as {
+  width: 100%;
+  font-weight: 200;
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+.container .info h1 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+.container .info p {
+  color: var(--Grayish-Blue);
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.1px;
+  text-align: center;
+}
+.container .card-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.container .card-section .card {
+  border-radius: 10px;
+  overflow: hidden;
+  margin-right: 2rem;
+}
+.container .card-section .class-color {
+  background-color: var(--p-Cyan);
+  width: 100%;
+  height: 3px;
+}
+.container .card-section .color-blue {
+  background-color: var(--p-Blue);
+}
+.container .card-section .color-red {
+  background-color: var(--p-Red);
+}
+.container .card-section .color-orange {
+  background-color: var(--p-Orange);
+}
+.container .card-section .card-inside {
+  overflow: auto;
+  background-color: var(--Pwhite);
+  width: 100%;
+  padding: 1.75em;
+  margin-bottom: 1.5625em;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 5px 5px 0.5 black;
+}
+.container .card-section .card-inside h2 {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+.container .card-section .card-inside p {
+  font-size: 0.8125rem;
+  color: var(--Grayish-Blue);
+  margin-bottom: 2rem;
+}
+.container .card-section .card-inside span {
+  display: block;
+  width: 3.2625rem;
+  height: 3.2625rem;
+  align-self: flex-end;
+  margin-right: 1.75rem;
+  margin-bottom: 1.75rem;
+}
+
+@media (min-width: 1100px) {
+  .container .card-section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}/*# sourceMappingURL=index.css.map */
