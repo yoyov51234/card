@@ -172,14 +172,20 @@ body {
 }
 
 @media (min-width:1204px) {
+  .info {
+    margin-bottom: fontSize(64, );
+
+    // .title{}
+    .introduce {}
+  }
 
 
   .container {
-    margin-left: size(165, );
-    margin-right: size(165, );
-    margin-top: size(80, );
-    margin-bottom: size(80, );
-    padding: 0;
+    padding: size(165, );
+    padding-right: size(165, );
+    padding-top: size(80, );
+    padding-bottom: size(80, );
+    // padding: 0;
 
     .cards-section {
       display: grid;

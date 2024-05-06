@@ -116,12 +116,14 @@ body {
   }
 }
 @media (min-width: 1204px) {
+  .info {
+    margin-bottom: 4rem;
+  }
   .container {
-    margin-left: 10.3125em;
-    margin-right: 10.3125em;
-    margin-top: 5em;
-    margin-bottom: 5em;
-    padding: 0;
+    padding: 10.3125em;
+    padding-right: 10.3125em;
+    padding-top: 5em;
+    padding-bottom: 5em;
   }
   .container .cards-section {
     display: grid;
