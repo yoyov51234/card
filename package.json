@@ -5,12 +5,16 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "tailwindcss -i ./src/input.css -o ./public/output.css --watch"
+    "build-css": "tailwindcss -i ./src/input.css -o ./public/output.css --watch",
+    "build": "babel vanillaCss/03testmonial/src -d vanillaCss/03testmonial/public"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@babel/cli": "^7.24.5",
+    "@babel/core": "^7.24.5",
+    "@babel/preset-env": "^7.24.5",
     "tailwindcss": "^3.4.3"
   }
 }
