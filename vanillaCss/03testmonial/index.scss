@@ -139,7 +139,9 @@ $base-size-default: 16;
   &__subject {
     font-size: fontSize(20, );
     font-weight: 600;
-    padding-bottom: size(40, );
+    padding-bottom: fontSize(40, );
+    // padding-bottom: size(40, );
+
     // z-index: 1;
   }
 
@@ -166,6 +168,12 @@ $base-size-default: 16;
     padding-top: size(164, );
     padding-bottom: size(164, );
     // grid-template-columns: repeat(auto-fit, repeat(minmax(255px, 1fr)));
+
+    .card {
+      &__subject {
+        padding-bottom: size(24, );
+      }
+    }
 
     .card:first-child {
       grid-column: 1/3;

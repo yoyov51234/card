@@ -86,7 +86,7 @@
 .card__subject {
   font-size: 1.25rem;
   font-weight: 600;
-  padding-bottom: 2.5em;
+  padding-bottom: 2.5rem;
 }
 .card__details {
   font-size: 0.8125rem;
@@ -106,6 +106,9 @@
     padding-right: 10.3125em;
     padding-top: 10.25em;
     padding-bottom: 10.25em;
+  }
+  .container .card__subject {
+    padding-bottom: 1.5em;
   }
   .container .card:first-child {
     grid-column: 1/3;
