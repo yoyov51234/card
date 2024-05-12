@@ -89,10 +89,18 @@ body {
     height: 102px;
   }
 
+  &--quoteCycle {
+    border: 2px solid #A775F1;
+  }
+
   //modifier
 
   &--Moderate_violet {
+
+    background: url(./images/bg-pattern-quotation.svg);
     background-color: var(--Moderate_violet);
+    background-repeat: no-repeat;
+    background-position: top right 7%;
   }
 
   &--Very-dark-blackish-blue {
@@ -191,6 +199,10 @@ body {
         padding-bottom: size(16, 20);
       }
 
+      &--Moderate_violet {
+        background-position: top right 18%;
+      }
+
       &__author {
         padding-bottom: size(18, );
         display: flex;
@@ -206,7 +218,7 @@ body {
   }
 }
 
-@media (min-width:1140px) {
+@media (min-width:1129px) {
   .container {
     grid-template-columns: repeat(4, 255px);
     justify-content: center;

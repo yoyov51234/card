@@ -50,8 +50,14 @@ body {
   width: 104px;
   height: 102px;
 }
+.card--quoteCycle {
+  border: 2px solid #A775F1;
+}
 .card--Moderate_violet {
+  background: url(./images/bg-pattern-quotation.svg);
   background-color: var(--Moderate_violet);
+  background-repeat: no-repeat;
+  background-position: top right 7%;
 }
 .card--Very-dark-blackish-blue {
   background-color: var(--Very-dark-blackish-blue);
@@ -120,6 +126,9 @@ body {
   .container .card__subject {
     padding-bottom: 0.8em;
   }
+  .container .card--Moderate_violet {
+    background-position: top right 18%;
+  }
   .container .card__author {
     padding-bottom: 1.125em;
     display: flex;
@@ -131,7 +140,7 @@ body {
     grid-column: span 2;
   }
 }
-@media (min-width: 1140px) {
+@media (min-width: 1129px) {
   .container {
     grid-template-columns: repeat(4, 255px);
     justify-content: center;
