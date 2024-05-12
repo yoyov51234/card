@@ -23,7 +23,7 @@ $base-size-default: 16;
   //  2. Review paragraphs inside the quotations have the same color as well, but are at 70% opacity
 }
 
-//Functions
+// Functions
 @function size($target, $basesize: $base-size-default) {
 
   @return ($target / $basesize) * 1em;
@@ -139,7 +139,7 @@ $base-size-default: 16;
   &__subject {
     font-size: fontSize(20, );
     font-weight: 600;
-    padding-bottom: fontSize(40, );
+    padding-bottom: size(40, );
     // padding-bottom: size(40, );
 
     // z-index: 1;
@@ -171,7 +171,7 @@ $base-size-default: 16;
 
     .card {
       &__subject {
-        padding-bottom: size(24, );
+        padding-bottom: size(24, 20);
       }
     }
 
