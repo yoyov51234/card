@@ -35,14 +35,6 @@ $base-size-default: 16;
 }
 
 //Blocks
-body {
-  display: grid;
-  grid-template: 1fr 1fr;
-  justify-content: center;
-  background-color: var(--Light-grayish-blue);
-}
-
-
 
 .container {
   min-height: 100vh;
@@ -54,10 +46,10 @@ body {
   padding-bottom: size(71);
   background-color: var(--Light-grayish-blue);
   display: grid;
-  // margin: 0 auto;
+  margin: 0 auto;
   // grid-template-columns: repeat(4, minmax(300px, 1fr));
   // what's the problem with the above line?
-
+  grid-template-columns: repeat(4, 255px);
   row-gap: size(24, );
   column-gap: size(30, );
 
@@ -77,7 +69,8 @@ body {
   // padding-bottom: 0;
   padding-top: size(26, );
   border-radius: fontSize(8, );
-
+  // width: minmax(320px, 1fr); todo
+  // min-width: minmax();
 
   &__quote {
     position: absolute;
@@ -163,53 +156,26 @@ body {
 
 }
 
-
 @media (max-width:320px) {
-  .container {
-    min-width: 320px;
-  }
-}
-
-@media (max-width:375px) {
   .container {
     padding-left: 0;
     padding-right: 0;
   }
 }
 
-@media (min-width:700px) {
+@media (min-width:960px) {
   .container {
-    grid-template-areas: " . . "
-      " . . "
-      " . . ";
-    // padding: 32px;
-    // padding-top: 26px;
-    margin: 0 2rem;
-
-    .card {
-      &__subject {
-        padding-bottom: size(16, 20);
-      }
-
-      &__author {
-        padding-bottom: size(18, );
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-      }
-    }
-  }
-
-  .card:first-child {
-    grid-column: span 2;
-  }
-}
-
-@media (min-width:1140px) {
-  .container {
-    grid-template-columns: repeat(4, 255px);
+    // padding-left: size(165, );
+    // padding-right: size(165, );
+    // padding-top: size(164, );
+    // padding-bottom: size(164, );
+    // grid-template-columns: repeat(auto-fit, repeat(minmax(255px, 1fr)));
+    display: grid;
+    grid-template: auto auto / repeat(4, 255px);
     justify-content: center;
+    // grid-template-areas: "card1 card1 card2 card3"
+    //   "card4 card5 card5 card3";
+
 
     .card {
       &__subject {
