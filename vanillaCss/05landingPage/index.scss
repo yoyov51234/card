@@ -124,8 +124,28 @@ $base-font-size : 16;
 
   }
 
+  &__Button--lightGreen:hover {
+    background-color: #71C0D4;
+
+    .container__Button--version {
+      color: #8FE3F9;
+    }
+
+
+
+  }
+
+
+
   &__Button--lightPurple {
     background-color: #855FB1;
+    // color: #fff;
+    // font-weight: 900;
+    // margin-bottom: size(64, 16);
+  }
+
+  &__Button--lightPurple:hover {
+    background-color: #D9B8FF;
     // color: #fff;
     // font-weight: 900;
     // margin-bottom: size(64, 16);
