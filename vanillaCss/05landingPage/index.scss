@@ -401,6 +401,9 @@ $base-font-size : 16;
 
 
   .container {
+    padding-top: size(80, );
+
+
     &__heros {
       display: grid;
       // flex-direction: row;
