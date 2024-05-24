@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .box {
+      display: grid;
+      text-align: center;
+      /* justify-content: center; */
+      /* grid-auto-rows: min-content; */
+
+    }
+
+    .logo {
+      padding-top: 40px;
+      /* align-self: center;
+       */
+      justify-self: center;
+      padding-bottom: 54px;
+      /* 
+      问题1
+      1. 我们可以把这个图片用background显示出来
+      2. 也可以用image 显示出来
+      什么时候用background比较好
+      什么时候用 image比较好, image 我们可以加link */
+
+      /* 
+      问题2
+      我们怎么改这个image 的大小？ */
+    }
+
+    .images {
+      display: grid;
+      /* grid-template: '. .'; */
+      /* grid-template-rows: ;
+       */
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 153px;
+      justify-self: stretch;
+      grid-column-gap: 1em;
+    }
+
+    /*  the background color won't show if the div heigh is 0 */
+
+    .image1 {
+      background-repeat: no-repeat;
+      background-position: right;
+      background-size: cover;
+
+      background-image: url(../vanillaCss/04landingPage/assets/desktop/image-hero-left.png);
+    }
+
+    .image2 {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: left;
+      background-image: url(../vanillaCss/04landingPage/assets/desktop/image-hero-right.png);
+    }
+
+    h1 {
+      padding-top: 48px;
+      font-weight: 900;
+      font-size: 40px;
+      padding-bottom: 32px;
+    }
+
+    .communcation {
+      color: #87879D;
+      font-size: 16px;
+      font-weight: 500;
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <img class="logo" src="../vanillaCss/04landingPage/assets/logo.svg">
+
+    </img>
+    <div class="images">
+      <div class="image1"></div>
+      <div class="image2"></div>
+    </div>
+    <h1>Group Chat
+      for Everyone</h1>
+    <p class="communcation">Meet makes it easy to connect with others face-to-face virtually and collaborate across any
+      device.</p>
+    <button></button>
+  </div>
+
+</body>
+
+</html>

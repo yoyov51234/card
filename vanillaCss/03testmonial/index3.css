@@ -25,10 +25,10 @@
   background-color: var(--Light-grayish-blue);
   display: grid;
   margin: 0 auto;
-  grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+  grid-template-columns: repeat(4, 255px);
   row-gap: 1.5em;
   -moz-column-gap: 1.875em;
-  column-gap: 1.875em;
+       column-gap: 1.875em;
 }
 
 .card {
@@ -38,7 +38,6 @@
   padding-top: 1.625em;
   border-radius: 0.5rem;
 }
-
 .card__quote {
   position: absolute;
   right: 1.5rem;
@@ -46,24 +45,19 @@
   width: 104px;
   height: 102px;
 }
-
 .card--Moderate_violet {
   background-color: var(--Moderate_violet);
 }
-
 .card--Very-dark-blackish-blue {
   background-color: var(--Very-dark-blackish-blue);
 }
-
 .card--Very-dark-grayish-blue {
   background-color: var(--Very-dark-grayish-blue);
 }
-
 .card--White {
   background-color: var(--White);
   color: var(--Very-dark-blackish-blue);
 }
-
 .card__author {
   display: flex;
   flex-direction: row;
@@ -71,36 +65,30 @@
   align-items: center;
   padding-bottom: 1.125em;
 }
-
 .card__div {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-left: 1.0625em;
 }
-
 .card__image {
   width: 1.75em;
   border-radius: 50%;
 }
-
 .card__name {
   font-weight: 500;
   font-size: 0.8125rem;
 }
-
 .card__title {
   font-weight: 500;
   font-size: 0.6875rem;
   opacity: 50%;
 }
-
 .card__subject {
   font-size: 1.25rem;
   font-weight: 600;
   padding-bottom: 2.5em;
 }
-
 .card__details {
   font-size: 0.8125rem;
   font-weight: 500;
@@ -114,19 +102,15 @@
     padding-right: 0;
   }
 }
-
 @media (min-width: 960px) {
   .container {
     display: grid;
-    grid-template: auto auto/repeat(auto-fit, minmax(255px, 1fr));
-    /* grid-template-columns: repeat(auto-fit, minmax(255px, 1fr)); */
+    grid-template: auto auto/repeat(4, 255px);
     justify-content: center;
   }
-
   .container .card__subject {
     padding-bottom: 0.8em;
   }
-
   .container .card__author {
     padding-bottom: 1.125em;
     display: flex;
@@ -134,23 +118,17 @@
     justify-content: flex-start;
     align-items: center;
   }
-
   .container .card:first-child {
     grid-column: span 2;
   }
-
   .container .card:nth-child(3) {
     grid-row-start: 2;
   }
-
   .container .card:nth-child(4) {
     grid-row-start: 2;
     grid-column: span 2;
   }
-
   .container .card:nth-child(5) {
     grid-row: span 2;
   }
-}
-
-/*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=index3.css.map */

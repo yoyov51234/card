@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$base-font-size: 16;
+
+@function size($target, $source: $base-font-size) {
+  @return $target/$source * 1em;
+}
+
+@function fontSize($target, $source: $base-font-size) {
+  @return $target/$source * 1rem;
+}
+
+:root {
+  --header-black: #28283D;
+  --light-font-color: #87879D;
+  --dark-font-color: #FAFAFA;
+  --light-green: #4D96A9;
+  --light-purple: #855FB1;
+  --lighter-purple: #D9B8FF;
+  --pure-white: #FFFFFF;
+
+  font-size: 16px;
+
+}
+
+body {}
+
+.container {
+  width: 100%;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-auto-rows: auto;
+  margin: 0 auto;
+
+  justify-content: center;
+  align-content: center;
+  // align-items: center;
+  justify-items: center;
+  padding-top: size(48, );
+  // max-width: 375px;
+
+  &__header {
+    font-size: fontSize(40, );
+    font-weight: 900;
+    color: var(--header-black);
+    // align-self: center;
+    // justify-self: center;
+    // margin: 0 auto;
+    text-align: center;
+    padding-bottom: size(24, 40);
+  }
+
+  &__article {
+    text-align: center;
+    color: var(--light-font-color);
+    font-size: fontSize(13, );
+    padding-bottom: size(32, 16);
+  }
+
+  &__Button {
+    justify-self: center;
+    padding: 1em size(40, ) 1em size(40, );
+    border-radius: 50%;
+    font-size: fontSize(16, );
+    font-weight: 900;
+    border-radius: 29px;
+    text-align: center;
+
+  }
+
+  &__Button--lightGreen {
+    color: var(--pure-white);
+    background-color: var(--light-green);
+
+  }
+
+  &__Button--lightPurple {
+    color: var(--pure-white);
+    background-color: var(--light-purple);
+
+  }
+
+  &__Button:span {
+    color: var(--dark-font-color);
+  }
+
+  &__logo {
+    justify-self: center;
+  }
+
+  &__images {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: size(16, );
+  }
+
+  // &__images:first-child {
+  //   background: url(./assets/desktop/image-hero-left.png);
+  // }
+
+  // &__images:last-child {
+  //   background: url(./assets/desktop/image-hero-right.png);
+  // }
+
+  &__images:last-child,
+  &__images:first-child {
+    width: 199px;
+
+  }
+
+}
