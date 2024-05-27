@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>event target</title>
+</head>
+
+<body>
+  <button>Click me <em>Go on, it'll be fun</em></button>
+
+  <script>
+    let button = document.getElementsByTagName('button');
+    console.log(button);
+    button[0].addEventListener('click', (event) => {
+      console.log('this is the event target ' + event.target); // 
+      //This could be the `button` or the `em`, depending what the user actually clicked on
+      console.log('this is the CURRENT event target ' + event.currentTarget);
+      // This will always be the button
+    });
+  </script>
+
+</body>
+
+</html>
