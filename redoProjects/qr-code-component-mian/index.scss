@@ -8,19 +8,24 @@ body {
   background-color: #D5E1EF;
 
   font-family: 'Outfit';
+  min-height: 100vh;
 }
 
 .box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
   margin-bottom: 20px;
-  min-height: 100vh;
-  flex-direction: column;
-  gap: 20px;
+
+
+
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+
   margin: 0 auto;
   // min-width: 320px;
   max-width: 320px;
