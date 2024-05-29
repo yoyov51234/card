@@ -8,23 +8,23 @@ body {
   background-color: #D5E1EF;
 
   font-family: 'Outfit';
-  min-height: 100vh;
+
 }
 
 .box {
-
   margin-bottom: 20px;
-
-
-
+  min-height: 100vh;
+  height: 100%;
+  display: flex;
+  // flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
 }
 
 .container {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  align-items: center;
-  justify-content: center;
 
   margin: 0 auto;
   // min-width: 320px;
@@ -65,4 +65,22 @@ body {
   letter-spacing: 0.19px;
   padding-left: 16px;
   padding-right: 16px;
+}
+
+.attribution {
+  width: 100%;
+  font-size: 11px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // text-align: center;
+  gap: 0.5em;
+  margin-block: 2rem;
+
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
