@@ -92,6 +92,7 @@ body {
         font-size: size(20, );
         font-weight: 800;
         cursor: pointer;
+        line-height: 150%;
 
         &:hover {
           color: var(--primary);
@@ -102,6 +103,7 @@ body {
         color: var(--grey);
         font-size: size(14, );
         font-weight: 500;
+        line-height: 150%;
       }
     }
 

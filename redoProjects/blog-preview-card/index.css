@@ -64,6 +64,7 @@ body {
   font-size: 1.25em;
   font-weight: 800;
   cursor: pointer;
+  line-height: 150%;
 }
 .wrapper .main .article .article__title:hover {
   color: var(--primary);
@@ -72,6 +73,7 @@ body {
   color: var(--grey);
   font-size: 0.875em;
   font-weight: 500;
+  line-height: 150%;
 }
 .wrapper .main .author {
   display: flex;
