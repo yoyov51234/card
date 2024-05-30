@@ -1,0 +1,95 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  line-height: 150%;
+}
+
+:root {
+  --pr-Green: hsl(75, 94%, 57%);
+  --White: hsl(0, 0%, 100%);
+  --Grey: hsl(0, 0%, 20%);
+  --Dark-Grey: hsl(0, 0%, 12%);
+  --Off-Black: hsl(0, 0%, 8%);
+  --font-size-p: 14px;
+  font-family: "Inter", serif;
+  color: var(--White);
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  height: 100%;
+  background-color: var(--Off-Black);
+}
+.wrapper .main {
+  margin-inline: Size(16);
+  padding: 1.5em;
+  min-width: 327px;
+  background-color: var(--Dark-Grey);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5em;
+}
+.wrapper .main .author {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+.wrapper .main .author__avater {
+  width: 5.5em;
+  aspect-ratio: 1;
+  align-self: center;
+}
+.wrapper .main .author__avater img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+.wrapper .main .author .author__name {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+.wrapper .main .author .author__loc {
+  color: var(--pr-Green);
+  font-size: 0.875em;
+  font-weight: 600;
+}
+.wrapper .main .author .author__quote {
+  font-size: 0.875em;
+}
+.wrapper .main .nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: stretch;
+  width: 100%;
+}
+.wrapper .main .nav .btn {
+  background-color: var(--Grey);
+  color: var(--White);
+  font-weight: 700;
+  padding: 0.75em;
+  border-radius: 0.5em;
+  cursor: pointer;
+}
+.wrapper .main .nav .btn:hover {
+  color: var(--Off-Black);
+  background-color: var(--pr-Green);
+}
+
+@media (min-width: 584px) {
+  .wrapper .main {
+    padding: 2.5em;
+    max-width: 384px;
+  }
+}/*# sourceMappingURL=index.css.map */

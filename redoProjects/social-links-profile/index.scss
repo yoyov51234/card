@@ -1,0 +1,138 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  line-height: 150%;
+
+}
+
+:root {
+  //  ### Primary
+
+  --pr-Green: hsl(75, 94%, 57%);
+
+  // ### Neutral
+
+  --White: hsl(0, 0%, 100%);
+  --Grey: hsl(0, 0%, 20%);
+  --Dark-Grey: hsl(0, 0%, 12%);
+  --Off-Black: hsl(0, 0%, 8%);
+
+  // 
+  --font-size-p: 14px;
+  font-family: 'Inter', serif;
+  color: var(--White);
+}
+
+//variables
+$base-font: 16;
+
+
+// functions
+@function size($target, $base: $base-font) {
+  @return $target/$base * 1em;
+}
+
+@function rSize($target, $base: $base-font) {
+  @return $target/$base * 1rem;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  height: 100%;
+  background-color: var(--Off-Black);
+
+  .main {
+    margin-inline: Size(16, );
+    padding: size(24, );
+    min-width: 327px;
+    background-color: var(--Dark-Grey);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: size(24, );
+
+
+    .author {
+      display: flex;
+      flex-direction: column;
+      gap: size(24, );
+
+
+      &__avater {
+        // align-self: center;
+        width: size(88, );
+        aspect-ratio: 1;
+        align-self: center;
+
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 50%;
+        }
+      }
+
+      .author__name {
+        font-size: size(24, );
+        font-weight: 600;
+      }
+
+      .author__loc {
+        color: var(--pr-Green);
+        font-size: size(14, );
+        font-weight: 600;
+      }
+
+      .author__quote {
+        font-size: size(14, );
+      }
+
+    }
+
+    .nav {
+      // margin-block: size(24, );
+      display: flex;
+      flex-direction: column;
+      gap: size(16, );
+      align-items: stretch;
+      width: 100%;
+
+      .btn {
+        // max-width: 100%;
+
+        background-color: var(--Grey);
+        color: var(--White);
+        font-weight: 700;
+        padding: size(12, 16);
+        border-radius: size(8, );
+        cursor: pointer;
+
+        &:hover {
+          color: var(--Off-Black);
+          background-color: var(--pr-Green);
+        }
+
+      }
+
+
+    }
+  }
+}
+
+@media (min-width:584px) {
+  .wrapper {
+    .main {
+      padding: size(40, );
+      max-width: 384px;
+    }
+  }
+}
