@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: hsl(47, 88%, 63%);
+  --white: hsl(0, 0%, 100%);
+  --grey: hsl(0, 0%, 50%);
+  --black: hsl(0, 0%, 7%);
+  font-family: "Figtree", sans-serif;
+}
+
+body {
+  background-color: var(--primary);
+}
+
+.wrapper {
+  min-height: 100vh;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper .main {
+  background-color: var(--white);
+  padding: 1.5em;
+  border-radius: 1.25em;
+  margin-inline: 1.5em;
+  max-width: 327px;
+  border: 1.5px solid var(--black);
+  box-shadow: 10px 10px 1px var(--black);
+}
+.wrapper .main .image img {
+  border-radius: 0.625em;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.wrapper .main .article {
+  margin-block: 1.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75em;
+}
+.wrapper .main .article__tag {
+  background-color: var(--primary);
+  font-size: 0.75em;
+  border-radius: 0.3333333333em;
+  padding-inline: 1em;
+  align-self: flex-start;
+  padding-block: 0.3333333333em;
+  color: var(--black);
+  font-weight: 800;
+}
+.wrapper .main .article .article__date {
+  color: var(--black);
+  font-size: 0.75em;
+}
+.wrapper .main .article .article__title {
+  color: var(--black);
+  font-size: 1.25em;
+  font-weight: 800;
+  cursor: pointer;
+}
+.wrapper .main .article .article__title:hover {
+  color: var(--primary);
+}
+.wrapper .main .article .article__desc {
+  color: var(--grey);
+  font-size: 0.875em;
+  font-weight: 500;
+}
+.wrapper .main .author {
+  display: flex;
+  flex-direction: row;
+  gap: 0.75em;
+  justify-content: flex-start;
+  align-items: center;
+}
+.wrapper .main .author .author__avator {
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+}
+.wrapper .main .author .author__avator img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.wrapper .main .author .author__name {
+  font-size: 0.875em;
+  font-weight: 800;
+}
+
+@media (min-width: 584px) {
+  .wrapper .main {
+    max-width: 384px;
+    padding: 1.5em;
+  }
+  .wrapper .main .article__tag,
+  .wrapper .main .article .article__date {
+    font-size: 0.875em;
+  }
+  .wrapper .main .article .article__title {
+    font-size: 1.5em;
+  }
+  .wrapper .main .article .article__desc {
+    font-size: 1em;
+  }
+}/*# sourceMappingURL=index.css.map */

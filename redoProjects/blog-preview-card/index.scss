@@ -1,0 +1,161 @@
+//variables 
+$basic-font: 16;
+
+//remove the default format
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  // #Primay:
+  --primary: hsl(47, 88%, 63%);
+
+  //Neutral
+  --white: hsl(0, 0%, 100%);
+  --grey: hsl(0, 0%, 50%);
+  --black: hsl(0, 0%, 7%);
+
+  font-family: 'Figtree', sans-serif;
+
+}
+
+body {
+
+  background-color: var(--primary);
+}
+
+@function size($target, $default: $basic-font) {
+  @return $target/$default * 1em;
+}
+
+.wrapper {
+  // The children of wrapper will be centered 
+  min-height: 100vh;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+
+  .main {
+    background-color: var(--white);
+    padding: size(24, );
+    border-radius: size(20, );
+    margin-inline: size(24, );
+    // add this so in 320 screen , it will work fine
+    max-width: 327px;
+    border: 1.5px solid var(--black);
+    box-shadow: 10px 10px 1px var(--black);
+
+    .image img {
+      border-radius: size(10, );
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .article {
+      margin-block: size(24, );
+      display: flex;
+      flex-direction: column;
+
+      gap: size(12, );
+
+      &__tag {
+        // display: inline-block;
+        background-color: var(--primary);
+        font-size: size(12, );
+        // text-align: center;
+        border-radius: size(4, 12);
+
+
+        padding-inline: size(12, 12);
+        align-self: flex-start;
+        padding-block: size(4, 12);
+        // border: 1px solid red;
+        color: var(--black);
+        font-weight: 800;
+
+
+      }
+
+      .article__date {
+        color: var(--black);
+        font-size: size(12, );
+      }
+
+      .article__title {
+        // color: var(--primary);
+        color: var(--black);
+        font-size: size(20, );
+        font-weight: 800;
+        cursor: pointer;
+
+        &:hover {
+          color: var(--primary);
+        }
+      }
+
+      .article__desc {
+        color: var(--grey);
+        font-size: size(14, );
+        font-weight: 500;
+      }
+    }
+
+    .author {
+      display: flex;
+      flex-direction: row;
+      gap: size(12, );
+      justify-content: flex-start;
+      align-items: center;
+
+      .author__avator {
+        width: size(32, );
+        height: size(32, );
+        border-radius: 50%;
+
+        & img {
+          width: 100%;
+          object-fit: cover;
+        }
+
+      }
+
+      .author__name {
+        font-size: size(14, );
+        font-weight: 800;
+      }
+    }
+  }
+
+
+}
+
+@media (min-width:584px) {
+  .wrapper {
+    .main {
+      max-width: 384px;
+      padding: size(24, );
+
+      .article {
+
+        &__tag,
+        .article__date {
+          font-size: size(14, );
+        }
+
+        .article__title {
+          font-size: size(24, );
+        }
+
+        .article__desc {
+          font-size: size(16, );
+        }
+
+      }
+    }
+  }
+}
