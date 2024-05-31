@@ -50,7 +50,7 @@ $base-font: 16;
   .main {
     margin-inline: Size(16, );
     padding: size(24, );
-    max-width: 327px;
+    width: 327px;
     background-color: var(--Dark-Grey);
     text-align: center;
     display: flex;
@@ -132,7 +132,7 @@ $base-font: 16;
   .wrapper {
     .main {
       padding: size(40, );
-      max-width: 384px;
+      width: 384px;
     }
   }
 }
