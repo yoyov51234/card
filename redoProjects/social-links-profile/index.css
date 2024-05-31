@@ -46,7 +46,7 @@
 }
 .wrapper .main .author__avater {
   width: 6.2857142857em;
-  aspect-ratio: 1;
+  height: 6.2857142857em;
   align-self: center;
 }
 .wrapper .main .author__avater img {
