@@ -29,7 +29,7 @@
 .wrapper .main {
   margin-inline: Size(16);
   padding: 1.5em;
-  min-width: 327px;
+  max-width: 327px;
   background-color: var(--Dark-Grey);
   text-align: center;
   display: flex;
@@ -90,6 +90,6 @@
 @media (min-width: 584px) {
   .wrapper .main {
     padding: 2.5em;
-    min-width: 384px;
+    max-width: 384px;
   }
 }/*# sourceMappingURL=index.css.map */
