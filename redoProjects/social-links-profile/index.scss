@@ -132,7 +132,7 @@ $base-font: 16;
   .wrapper {
     .main {
       padding: size(40, );
-      max-width: 384px;
+      min-width: 384px;
     }
   }
 }

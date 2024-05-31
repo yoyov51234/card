@@ -90,6 +90,6 @@
 @media (min-width: 584px) {
   .wrapper .main {
     padding: 2.5em;
-    max-width: 384px;
+    min-width: 384px;
   }
 }/*# sourceMappingURL=index.css.map */
