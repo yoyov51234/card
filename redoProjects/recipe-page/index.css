@@ -160,6 +160,7 @@
   .wrapper {
     margin-inline: 2rem;
     margin-block: 6.3vh;
+    justify-content: center;
     align-items: center;
     max-width: 736px;
   }
