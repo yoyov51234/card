@@ -119,8 +119,6 @@
 .wrapper .main .recipe__ingredients .li::marker {
   color: var(--Dark-Raspberry);
   font-size: 0.8em;
-  margin-inline-end: 16px;
-  min-width: 16px;
 }
 .wrapper .main .recipe__instructions .ul .li {
   margin-left: 1em;
@@ -157,11 +155,12 @@
     background-color: var(--Eggshell);
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
   }
   .wrapper {
     margin-inline: 2rem;
-    justify-content: center;
+    margin-block: 6.3vh;
+    align-items: center;
     max-width: 736px;
   }
   .wrapper .header {
@@ -180,6 +179,8 @@
     justify-content: center;
     max-width: 100%;
     padding-inline: 2.5em;
+    border-bottom-left-radius: 1.5em;
+    border-bottom-right-radius: 1.5em;
   }
   .wrapper .main .recipe__prepare .recipe__times ul li {
     line-height: 150%;

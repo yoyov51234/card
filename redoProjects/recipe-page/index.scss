@@ -186,8 +186,9 @@ $basefont: 16;
         &::marker {
           color: var(--Dark-Raspberry);
           font-size: 0.8em;
-          margin-inline-end: 16px;
-          min-width: 16px;
+          // margin-inline-end: 88px;
+          // min-width: 16px;
+          // display: inline-block;
 
         }
       }
@@ -250,7 +251,8 @@ $basefont: 16;
     background-color: var(--Eggshell);
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+
   }
 
   // .padding--start8 {
@@ -259,8 +261,11 @@ $basefont: 16;
 
   .wrapper {
     margin-inline: 2rem;
-    justify-content: center;
+    margin-block: 6.3vh;
+    // justify-content: center;
+    align-items: center;
     max-width: 736px;
+
 
     // background-color: white;
     // align-items: center;
@@ -284,6 +289,8 @@ $basefont: 16;
       // max-width: 736px;
       max-width: 100%;
       padding-inline: size(40, );
+      border-bottom-left-radius: size(24, );
+      border-bottom-right-radius: size(24, );
 
       .recipe__prepare {
         .recipe__times {
