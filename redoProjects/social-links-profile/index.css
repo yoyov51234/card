@@ -28,7 +28,7 @@
 }
 .wrapper .main {
   margin-inline: Size(16);
-  padding: 1.5em;
+  padding: 1.7142857143em;
   width: 327px;
   background-color: var(--Dark-Grey);
   text-align: center;
@@ -36,15 +36,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1.5em;
+  gap: 1.7142857143em;
 }
 .wrapper .main .author {
   display: flex;
   flex-direction: column;
-  gap: 1.5em;
+  gap: 1.7142857143em;
 }
 .wrapper .main .author__avater {
-  width: 5.5em;
+  width: 6.2857142857em;
   aspect-ratio: 1;
   align-self: center;
 }
@@ -56,21 +56,21 @@
   border-radius: 50%;
 }
 .wrapper .main .author .author__name {
-  font-size: 1.5em;
+  font-size: 1.7142857143em;
   font-weight: 600;
 }
 .wrapper .main .author .author__loc {
   color: var(--pr-Green);
-  font-size: 0.875em;
+  font-size: 1em;
   font-weight: 600;
 }
 .wrapper .main .author .author__quote {
-  font-size: 0.875em;
+  font-size: 1em;
 }
 .wrapper .main .nav {
   display: flex;
   flex-direction: column;
-  gap: 1em;
+  gap: 1.1428571429em;
   align-items: stretch;
   width: 100%;
 }
@@ -79,7 +79,7 @@
   color: var(--White);
   font-weight: 700;
   padding: 0.75em;
-  border-radius: 0.5em;
+  border-radius: 0.5714285714em;
   cursor: pointer;
 }
 .wrapper .main .nav .btn:hover {
@@ -89,7 +89,7 @@
 
 @media (min-width: 584px) {
   .wrapper .main {
-    padding: 2.5em;
+    padding: 2.8571428571em;
     width: 384px;
   }
 }/*# sourceMappingURL=index.css.map */
