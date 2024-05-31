@@ -16,6 +16,7 @@
   --font-size-p: 14px;
   font-family: "Inter", serif;
   color: var(--White);
+  font-size: 14px;
 }
 
 .wrapper {
@@ -80,6 +81,7 @@
   font-weight: 700;
   padding: 0.75em;
   border-radius: 0.5714285714em;
+  font-size: var(--font-size-p);
   cursor: pointer;
 }
 .wrapper .main .nav .btn:hover {

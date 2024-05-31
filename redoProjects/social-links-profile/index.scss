@@ -24,6 +24,8 @@
   --font-size-p: 14px;
   font-family: 'Inter', serif;
   color: var(--White);
+  font-size: 14px;
+
 }
 
 //variables
@@ -114,6 +116,7 @@ $base-font: 14;
         font-weight: 700;
         padding: size(12, 16);
         border-radius: size(8, );
+        font-size: var(--font-size-p);
         cursor: pointer;
 
         &:hover {
