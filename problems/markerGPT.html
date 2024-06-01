@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    ul {
+      list-style-position: outside;
+      /* Ensure the default markers are outside */
+      padding-left: 20px;
+      /* Add padding to the ul to create space for the markers */
+    }
+
+    ul li {
+      position: relative;
+      /* Position relative to allow custom marker positioning */
+    }
+
+    ul li::before {
+      /* content: "•"; */
+      /* Custom bullet content */
+      position: absolute;
+      /* Position absolutely within the li */
+      left: -20px;
+      /* Adjust position to control spacing */
+      color: black;
+      /* Optional: change bullet color */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="bo">
+    <p>title here</p>
+    <ul>
+      <li>this is good</li>
+      <li>she is bad</li>
+    </ul>
+  </div>
+</body>
+
+</html>

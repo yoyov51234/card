@@ -1,6 +1,7 @@
 *,
 *::before,
-*::after {
+*::after,
+*::marker {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -68,6 +69,12 @@
   border-top: 1px solid var(--white-coffee);
   width: 100%;
 }
+.wrapper .main .ul__title {
+  font-size: 1.25em;
+  font-weight: 600;
+  line-height: 100%;
+  color: var(--Dark-Raspberry);
+}
 .wrapper .main .grid {
   display: grid;
   grid-template-rows: auto;
@@ -94,13 +101,24 @@
   line-height: 100%;
   color: var(--Dark-Raspberry);
 }
+.wrapper .main .recipe__prepare .recipe__times {
+  font-size: 1.25em;
+  font-weight: 600;
+  line-height: 100%;
+  color: var(--Dark-Raspberry);
+}
 .wrapper .main .recipe__prepare .recipe__times li {
   line-height: 150%;
-  margin-left: 1em;
+  margin-left: 8px;
+  color: var(--Wenge-Brown);
+  font-size: 0.8em;
 }
 .wrapper .main .recipe__prepare .recipe__times li::marker {
   color: var(--Dark-Raspberry);
   font-size: 0.8em;
+}
+.wrapper .main .ul--style {
+  list-style-position: inside;
 }
 .wrapper .main .recipe__title {
   font-size: 1.75em;
@@ -114,20 +132,21 @@
   gap: 1.5em;
 }
 .wrapper .main .recipe__ingredients .li {
-  margin-left: 1em;
+  list-style-position: inside;
+  margin-left: 8px;
 }
 .wrapper .main .recipe__ingredients .li::marker {
   color: var(--Dark-Raspberry);
   font-size: 0.8em;
 }
 .wrapper .main .recipe__instructions .ul .li {
-  margin-left: 1em;
+  list-style-position: inside;
+  margin-left: 8px;
 }
 .wrapper .main .recipe__instructions .ul .li::marker {
   color: var(--Dark-Raspberry);
   font-size: 1em;
   font-weight: bold;
-  margin-inline-end: 1em;
 }
 .wrapper .main .nutrition__rows {
   display: flex;

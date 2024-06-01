@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>bullets format</title>
+  <style>
+    * {
+      margin: 0;
+      /* padding: 0; */
+      box-sizing: border-box;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      min-height: 100vh;
+      background: pink;
+    }
+
+    .mian {
+      background-color: yellow;
+    }
+
+    ul {
+      /* list-style-position: inside */
+      list-style-position: outside;
+    }
+
+    .ul2 {
+      /* list-style-position: inside */
+      list-style-position: inside;
+    }
+
+    ul li::marker {}
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="mian">
+      <p>do you think this will do?
+
+      </p>
+      <ul>
+        <li>
+          2-3 large eggs
+        </li>
+        <li>
+          Salt, to taste
+        </li>
+        <li>
+          Pepper, to taste
+        </li>
+        <li>
+          1 tablespoon of butter or oil
+        </li>
+      </ul>
+
+    </div>
+
+    <p>good to know it's inside</p>
+    <ul class="ul2">
+      <li>
+        2-3 large eggs
+      </li>
+      <li>
+        Salt, to taste
+      </li>
+      <li>
+        Pepper, to taste
+      </li>
+      <li>
+        1 tablespoon of butter or oil
+      </li>
+    </ul>
+  </div>
+
+</body>
+
+</html>
