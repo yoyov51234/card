@@ -239,6 +239,9 @@
     font-size: 1rem;
     line-height: 150%;
   }
+  .wrapper .main .recipe__instructions .ul .li {
+    line-height: 1.5;
+  }
   .wrapper .main .recipe__nutrition {
     align-self: flex-start;
   }

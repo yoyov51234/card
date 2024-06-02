@@ -142,6 +142,7 @@ $basefont: 16;
       row-gap: size(16, );
 
       .recipe__prepare_title {
+        // text-align: top;
         font-size: size(20, );
         font-weight: 600;
         line-height: 100%;
@@ -367,6 +368,12 @@ $basefont: 16;
             font-size: rSize(16, 16);
             line-height: 150%;
           }
+        }
+      }
+
+      .recipe__instructions {
+        & .ul .li {
+          line-height: 1.5;
         }
       }
 
