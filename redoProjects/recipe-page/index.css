@@ -31,6 +31,7 @@
   justify-content: flex-start;
   align-items: center;
   width: 100vw;
+  margin-block: var(--dynamic-margin, 0px);
 }
 .wrapper .header {
   width: 100%;
@@ -126,23 +127,26 @@
   list-style-position: inside;
 }
 .wrapper .main .recipe__title {
-  font-size: 1.75em;
+  font-size: 1.75rem;
   font-family: "Young Serif";
   color: var(--Nutmeg);
   font-weight: normal;
+  line-height: 100%;
 }
 .wrapper .main .recipe__ingredients {
   display: grid;
   grid-template-rows: auto;
-  gap: 1.5em;
+  gap: 1.5rem;
 }
 .wrapper .main .recipe__ingredients .ul {
   margin-left: 8px;
   list-style-position: outside;
+  font-size: 1rem;
 }
 .wrapper .main .recipe__ingredients .li {
   margin-left: 1em;
   padding-left: 1em;
+  line-height: 150%;
 }
 .wrapper .main .recipe__ingredients .li::marker {
   color: var(--Dark-Raspberry);
@@ -191,7 +195,6 @@
   }
   .wrapper {
     margin-inline: 2rem;
-    margin-block: 123px;
     justify-content: center;
     align-items: center;
     max-width: 736px;
@@ -215,6 +218,12 @@
     border-bottom-left-radius: 1.5em;
     border-bottom-right-radius: 1.5em;
   }
+  .wrapper .main .recipe__info .recipe__name {
+    font-size: 2.5em;
+  }
+  .wrapper .main .recipe__prepare {
+    padding: 1.75em;
+  }
   .wrapper .main .recipe__prepare .recipe__times ul li {
     line-height: 150%;
   }
@@ -224,6 +233,11 @@
   }
   .wrapper .main .recipe__ingredients {
     align-self: flex-start;
+    font-size: 1.75rem;
+  }
+  .wrapper .main .recipe__ingredients .ul .li {
+    font-size: 1rem;
+    line-height: 150%;
   }
   .wrapper .main .recipe__nutrition {
     align-self: flex-start;

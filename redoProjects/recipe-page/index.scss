@@ -54,6 +54,9 @@ $basefont: 16;
   justify-content: flex-start;
   align-items: center;
   width: 100vw;
+  margin-block: var(--dynamic-margin, 0px);
+
+
 
 
   .header {
@@ -87,6 +90,7 @@ $basefont: 16;
         font-family: 'Young Serif';
         font-size: size(36, );
         line-height: 100%;
+        // line-height: 40px;
       }
 
       .recipe__desc {
@@ -189,21 +193,24 @@ $basefont: 16;
 
 
     .recipe__title {
-      font-size: size(28, );
+      font-size: rSize(28, 16);
       font-family: 'Young Serif';
       color: var(--Nutmeg);
       font-weight: normal;
+      line-height: 100%;
     }
 
     .recipe__ingredients {
       display: grid;
       grid-template-rows: auto;
-      gap: size(24, );
+      gap: rSize(24, 16);
 
 
       .ul {
         margin-left: 8px;
         list-style-position: outside;
+        font-size: rSize(16, 16);
+
       }
 
       .li {
@@ -211,6 +218,7 @@ $basefont: 16;
         // list-style-position: outside;
         margin-left: 1em;
         padding-left: 1em;
+        line-height: 150%;
 
         &::marker {
           color: var(--Dark-Raspberry);
@@ -297,7 +305,7 @@ $basefont: 16;
 
   .wrapper {
     margin-inline: 2rem;
-    margin-block: 123px;
+    // margin-block: 123px;
     justify-content: center;
     align-items: center;
     max-width: 736px;
@@ -328,7 +336,15 @@ $basefont: 16;
       border-bottom-left-radius: size(24, );
       border-bottom-right-radius: size(24, );
 
+      .recipe__info {
+        .recipe__name {
+          font-size: size(40, );
+        }
+      }
+
       .recipe__prepare {
+        padding: size(28, );
+
         .recipe__times {
           & ul li {
             line-height: 150%;
@@ -344,6 +360,14 @@ $basefont: 16;
 
       .recipe__ingredients {
         align-self: flex-start;
+        font-size: rSize(28, 16);
+
+        .ul {
+          .li {
+            font-size: rSize(16, 16);
+            line-height: 150%;
+          }
+        }
       }
 
       .recipe__nutrition {
