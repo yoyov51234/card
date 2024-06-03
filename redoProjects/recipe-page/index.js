@@ -20,7 +20,7 @@ function getViewPort() {
   return viewportWidth;
 }
 
-// updateMargin();
+updateMargin();
 
 
 window.addEventListener('resize', updateMargin);

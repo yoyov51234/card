@@ -12,6 +12,7 @@
   //primary
   --Nutmeg: hsl(14, 45%, 36%);
   --Dark-Raspberry: hsl(332, 51%, 32%);
+  // --Brandy-Red: hsl(14, 45%, 36%);
   //neutral
 
   --White: hsl(0, 0%, 100%);
@@ -90,6 +91,7 @@ $basefont: 16;
         font-family: 'Young Serif';
         font-size: size(36, );
         line-height: 100%;
+        color: var(--Dark-Charcoal);
         // line-height: 40px;
       }
 
@@ -124,7 +126,7 @@ $basefont: 16;
     }
 
     .grid--gap8 {
-      row-gap: size(8, );
+      row-gap: 8px;
     }
 
 
@@ -134,6 +136,7 @@ $basefont: 16;
     }
 
     .recipe__prepare {
+
       background-color: var(--Rose-White);
       padding: size(24, );
       align-self: stretch;
@@ -159,11 +162,12 @@ $basefont: 16;
         list-style-position: inside;
 
         & li {
-          line-height: 150%;
+          line-height: 1.5;
           color: var(--Wenge-Brown);
           font-size: size(16, 20);
           // padding-left: size(16, );
           margin-left: 8px;
+          font-weight: 400;
 
           & span {
             display: inline-block;
@@ -276,6 +280,14 @@ $basefont: 16;
         border-bottom: 1px solid var(--white-coffee);
       }
 
+      &:first-child {
+        // padding-block-end: size(12, );
+        padding-block-end: size(12, );
+        padding-block-start: 0;
+        border-bottom: 1px solid var(--white-coffee);
+      }
+
+
 
       .nutrition__column1 {
         flex: 1;
@@ -285,7 +297,7 @@ $basefont: 16;
         flex: 1;
         line-height: 150%;
         font-weight: 700;
-        color: var(--Dark-Raspberry);
+        color: var(--Nutmeg);
       }
     }
   }
@@ -340,6 +352,7 @@ $basefont: 16;
       .recipe__info {
         .recipe__name {
           font-size: size(40, );
+          color: var(--Dark-Charcoal);
         }
       }
 
@@ -348,7 +361,12 @@ $basefont: 16;
 
         .recipe__times {
           & ul li {
-            line-height: 150%;
+            line-height: 1.5;
+            // height: 24px;
+
+            & span {
+              font-size: size(20, 16);
+            }
 
             &::marker {
               color: var(--Dark-Raspberry);
@@ -379,6 +397,10 @@ $basefont: 16;
 
       .recipe__nutrition {
         align-self: flex-start;
+
+        & p {
+          line-height: 1.5;
+        }
       }
 
     }
