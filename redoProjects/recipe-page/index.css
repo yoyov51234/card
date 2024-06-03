@@ -254,7 +254,9 @@
     line-height: 1.5;
   }
   .wrapper .main .recipe__nutrition {
+    width: 100%;
     align-self: flex-start;
+    justify-content: stretch;
   }
   .wrapper .main .recipe__nutrition p {
     line-height: 1.5;

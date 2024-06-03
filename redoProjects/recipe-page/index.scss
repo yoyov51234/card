@@ -396,7 +396,9 @@ $basefont: 16;
       }
 
       .recipe__nutrition {
+        width: 100%;
         align-self: flex-start;
+        justify-content: stretch;
 
         & p {
           line-height: 1.5;
