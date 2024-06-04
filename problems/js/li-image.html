@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .list {
+      list-style: none;
+      /* Remove default list style */
+      padding-left: 0;
+      /* Remove default padding */
+    }
+
+    .list li {
+      position: relative;
+      padding-left: 30px;
+      /* Adjust based on the width of the check mark */
+      margin-bottom: 10px;
+      /* Space between list items */
+    }
+
+    .list li::before {
+      content: url('../../projects/jsProjects/02-newsletter/assets/images/icon-list.svg');
+      /* Replace with your check mark image path */
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      /* Vertically center the check mark */
+    }
+  </style>
+</head>
+
+<body>
+  <ul class="list">
+    <li>Product discovery and building what matters</li>
+    <li>Measuring to ensure updates are a success</li>
+    <li>And much more!</li>
+  </ul>
+</body>
+
+</html>

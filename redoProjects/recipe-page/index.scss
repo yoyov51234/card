@@ -92,6 +92,7 @@ $basefont: 16;
         font-size: size(36, );
         line-height: 100%;
         color: var(--Dark-Charcoal);
+
         // line-height: 40px;
       }
 
@@ -352,6 +353,7 @@ $basefont: 16;
       .recipe__info {
         .recipe__name {
           font-size: size(40, );
+          font-weight: 400;
           color: var(--Dark-Charcoal);
         }
       }

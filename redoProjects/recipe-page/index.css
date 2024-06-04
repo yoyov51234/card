@@ -227,6 +227,7 @@
   }
   .wrapper .main .recipe__info .recipe__name {
     font-size: 2.5em;
+    font-weight: 400;
     color: var(--Dark-Charcoal);
   }
   .wrapper .main .recipe__prepare {
