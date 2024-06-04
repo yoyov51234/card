@@ -74,6 +74,7 @@ $base: 16;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: var(--White);
 
     .header {
       width: 100%;
@@ -225,10 +226,11 @@ $base: 16;
   }
 
   .wrapper {
-    background-color: var(--White);
+    // background-color: var(--White);
+    background-color: var(--Charcoal-Grey);
     max-width: 928px;
     min-height: 100%;
-    border-radius: size(36, );
+
     margin-inline: 10px;
 
     .box {
@@ -242,6 +244,9 @@ $base: 16;
       align-self: center;
       padding: size(24, );
       padding-left: 0;
+      border-radius: size(36, );
+      // display: none;
+
 
 
       .header {
@@ -258,6 +263,7 @@ $base: 16;
         grid-row: 1;
         padding: 0;
         margin-inline: size(64, );
+
 
         .promots {
           .promots__title {
@@ -288,6 +294,28 @@ $base: 16;
       }
 
 
+    }
+
+    .box2 {
+      display: none;
+      height: auto;
+      width: auto;
+      border-radius: size(36, );
+      padding: size(64, );
+      padding-top: size(48, );
+      max-width: 504px;
+
+      .main {
+        display: flex;
+        flex-direction: column;
+        row-gap: size(10, );
+        justify-content: center;
+        align-items: center;
+        min-height: 100%;
+        padding-block-start: 0;
+        row-gap: size(40, );
+
+      }
     }
 
 
