@@ -166,7 +166,7 @@
   border: 1px solid var(--Tomato);
 }
 .wrapper .box2 {
-  display: none;
+  display: flex;
   margin-inline: 1.5em;
 }
 .wrapper .box2 .main {
@@ -277,7 +277,7 @@
     color: white;
   }
   .wrapper .box2 {
-    display: none;
+    display: flex;
     height: auto;
     width: auto;
     border-radius: 2.25em;

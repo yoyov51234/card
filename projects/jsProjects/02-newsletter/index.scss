@@ -215,7 +215,7 @@ $base: 16;
   }
 
   .box2 {
-    display: none;
+    display: flex;
     margin-inline: size(24, );
 
     .main {
@@ -366,7 +366,7 @@ $base: 16;
     }
 
     .box2 {
-      display: none;
+      display: flex;
       height: auto;
       width: auto;
       border-radius: size(36, );

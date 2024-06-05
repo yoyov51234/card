@@ -1,4 +1,4 @@
-const { DEFAULT_EXTENSIONS } = require("@babel/core");
+// const { DEFAULT_EXTENSIONS } = require("@babel/core");
 
 // console.log(mail)
 const mail = document.getElementById('email');
