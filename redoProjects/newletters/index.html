@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>news letters</title>
+  <link rel="stylesheet" href="./index.css">
+  <script defer src="./index.js"></script>
+</head>
+
+<body>
+  <section class="wrapper">
+    <main class="box " id="box">
+      <header class="header">
+        <picture>
+
+          <source media="(max-width:799px )" srcset="../newletters/assets/images/illustration-sign-up-mobile.svg"
+            sizes="">
+          <source media="(min-width:800px )" srcset="../newletters/assets/images/illustration-sign-up-desktop.svg"
+            sizes="">
+          <img src="../newletters/assets/images/illustration-sign-up-mobile.svg" alt="illustration">
+        </picture>
+      </header>
+      <section class="introduction">
+        <article class="article">
+          <div class="article__title">
+            Stay updated!
+          </div>
+          <div class="article__desc">Join 60,000+ product managers receiving monthly updates on:</div>
+          <ul class="article__list">
+            <li><span>Product discovery and building what matters</span></li>
+            <li><span>Measuring to ensure updates are a success</span></li>
+            <li><span>And much more!</span></li>
+          </ul>
+        </article>
+        <form action="" class="forms" novalidate>
+          <div>
+            <div class="lables">
+              <label for="input-email" class="label__emails" id="label__emails">Email address</label>
+              <label class="hide" id="label-error-message">Valid email
+                required</label>
+            </div>
+            <input type="email" placeholder="email@company.com" id="input-email" class="forms__input" required>
+          </div>
+          <button class="btn button btn-subscirbe" id="btn-subscirbe">Subscribe to monthly newsletter</button>
+          <span id="error-message"></span>
+        </form>
+      </section>
+
+    </main>
+    <section class="box2 hide" id="box2">
+      <div class="subscirbe">
+        <img class="subscirbe__image" src="../newletters/assets/images/icon-success.svg" alt="">
+        <h1 class="subscirbe__title">Thanks for subscribing!</h1>
+        <div class="subscirbe__desc" id="subscirbe__desc">A confirmation email has been sent to
+          <strong>ash@loremcompany.com</strong> Please
+          open it and click the button inside to confirm your
+          subscription
+        </div>
+      </div>
+      <button class="subscirbe__dismiss-btn btn" id="dismiss-btn"> Dismiss message</button>
+    </section>
+  </section>
+
+</body>
+
+</html>
