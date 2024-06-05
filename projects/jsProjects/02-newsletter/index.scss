@@ -78,6 +78,10 @@ $base: 16;
     align-items: center;
     background-color: var(--White);
 
+    &.hide {
+      display: none;
+    }
+
     .header {
       width: 100%;
 
@@ -284,6 +288,10 @@ $base: 16;
       min-width: 100%;
       // display: none;
 
+      &.hide {
+        display: none;
+      }
+
 
 
       .header {
@@ -365,6 +373,10 @@ $base: 16;
       padding: size(64, );
       padding-top: size(48, );
       max-width: 504px;
+
+      &.hide {
+        display: none;
+      }
 
       .main {
         display: flex;

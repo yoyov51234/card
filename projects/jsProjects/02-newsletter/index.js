@@ -1,3 +1,5 @@
+const { DEFAULT_EXTENSIONS } = require("@babel/core");
+
 // console.log(mail)
 const mail = document.getElementById('email');
 const subscribeBtn = document.getElementById('btn-subscribe');
@@ -55,17 +57,24 @@ form.addEventListener('submit', (e) => {
     errorMessage.textContent = 'Please enter a valid email address.';
   }
   else {
-    box.style.display = 'none';
-    box2.style.display = 'block';
+    toggleShow(box2);
+    toggleShow(box);
     desc.textContent = mail.value;
-
-
   }
-
-
 
 })
 
+function toggleShow(togglebox) {
+
+  if (togglebox.classList.contains('hide')) {
+    togglebox.classList.remove('hide')
+  } else {
+    togglebox.classList.add('hide');
+  }
+
+}
+
 btnDismiss.addEventListener('click', () => {
-  box2.style.display = 'none';
+  toggleShow(box2);
+  toggleShow(box);
 })

@@ -49,6 +49,10 @@
   align-items: center;
   background-color: var(--White);
 }
+.wrapper .box.hide,
+.wrapper .box2.hide {
+  display: none;
+}
 .wrapper .box .header,
 .wrapper .box2 .header {
   width: 100%;
@@ -223,6 +227,9 @@
     border-radius: 2.25em;
     min-width: 100%;
   }
+  .wrapper .box.hide {
+    display: none;
+  }
   .wrapper .box .header {
     grid-column: 2;
     height: 100%;
@@ -277,6 +284,9 @@
     padding: 4em;
     padding-top: 3em;
     max-width: 504px;
+  }
+  .wrapper .box2.hide {
+    display: none;
   }
   .wrapper .box2 .main {
     display: flex;
