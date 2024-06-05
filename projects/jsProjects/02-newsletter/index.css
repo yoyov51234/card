@@ -8,6 +8,7 @@
 
 :root {
   --Tomato: hsl(4, 100%, 67%);
+  --Tomato-Light: rgba(255, 98, 87, 0.15);
   --Dark-Slate-Grey: hsl(234, 29%, 20%);
   --Charcoal-Grey: hsl(235, 18%, 26%);
   --Grey: hsl(231, 7%, 60%);
@@ -106,6 +107,12 @@
   display: grid;
   row-gap: 1.5em;
 }
+.wrapper .box .main .form .form__labels,
+.wrapper .box2 .main .form .form__labels {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 .wrapper .box .main .form .form__email-label,
 .wrapper .box2 .main .form .form__email-label {
   font-size: var(--body-small);
@@ -113,6 +120,11 @@
   margin-bottom: 0.5em;
   display: inline-block;
   font-weight: 700;
+}
+.wrapper .box .main .form .email--invalid,
+.wrapper .box2 .main .form .email--invalid {
+  color: var(--Tomato);
+  display: none;
 }
 .wrapper .box .main .form .form__email,
 .wrapper .box2 .main .form .form__email {
@@ -122,6 +134,8 @@
   font-size: var(--body-normal);
   border-radius: 0.5rem;
   border: 1px solid var(--Grey);
+  font-family: "Roboto";
+  outline: none;
 }
 .wrapper .box .main .form .form__submit,
 .wrapper .box2 .main .form .form__submit {
@@ -134,6 +148,18 @@
   border-radius: 0.5rem;
   border: 1px solid transparent;
   line-height: 1.5;
+}
+.wrapper .box .main .form .form__submit:hover,
+.wrapper .box2 .main .form .form__submit:hover {
+  background-color: var(--Tomato);
+  color: white;
+}
+.wrapper .box .main .form .invalid,
+.wrapper .box2 .main .form .invalid {
+  line-height: 1.5;
+  background-color: var(--Tomato-Light);
+  color: var(--Tomato);
+  border: 1px solid var(--Tomato);
 }
 .wrapper .box2 {
   display: none;
@@ -228,8 +254,20 @@
     font-size: 1rem;
     line-height: 1.5;
   }
+  .wrapper .box .main .form .form__email:focus {
+    cursor: pointer;
+    outline-color: var(--Grey);
+    outline-width: 0.5px;
+  }
   .wrapper .box .main .form .form__submit {
     border: none;
+  }
+  .wrapper .box .main .form .form__submit:hover {
+    cursor: pointer;
+  }
+  .wrapper .box .main .form .form__submit:active {
+    background-color: var(--Tomato);
+    color: white;
   }
   .wrapper .box2 {
     display: none;
@@ -249,5 +287,12 @@
     min-height: 100%;
     padding-block-start: 0;
     row-gap: 2.5em;
+  }
+  .wrapper .box2 .main .btn {
+    cursor: pointer;
+  }
+  .wrapper .box2 .main .btn:hover {
+    background-color: var(--Tomato);
+    color: white;
   }
 }/*# sourceMappingURL=index.css.map */

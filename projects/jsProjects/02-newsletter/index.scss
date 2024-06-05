@@ -8,6 +8,8 @@
 
 :root {
   --Tomato: hsl(4, 100%, 67%);
+  --Tomato-Light: rgba(255, 98, 87, 0.15);
+  //  --co: hsl(4, 100%, 67%);
   --Dark-Slate-Grey: hsl(234, 29%, 20%);
   --Charcoal-Grey: hsl(235, 18%, 26%);
   --Grey: hsl(231, 7%, 60%);
@@ -140,6 +142,12 @@ $base: 16;
         display: grid;
         row-gap: size(24, );
 
+        .form__labels {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+        }
+
         .form__email-label {
           font-size: var(--body-small);
           line-height: var(--lh-150);
@@ -148,6 +156,14 @@ $base: 16;
           font-weight: 700;
         }
 
+        .email--invalid {
+          color: var(--Tomato);
+          display: none;
+
+        }
+
+
+
         .form__email {
           display: block;
           width: 100%;
@@ -155,6 +171,12 @@ $base: 16;
           font-size: var(--body-normal);
           border-radius: rootSize(8, );
           border: 1px solid var(--Grey);
+          font-family: 'Roboto';
+          outline: none;
+
+
+
+
         }
 
         .form__submit {
@@ -168,6 +190,20 @@ $base: 16;
           border: 1px solid transparent;
           line-height: 1.5;
 
+          &:hover {
+            background-color: var(--Tomato);
+            color: white;
+          }
+
+        }
+
+        .invalid {
+          // font-family: 'Roboto Flex';
+          line-height: 1.5;
+          // border-color: var(--Tomato);
+          background-color: var(--Tomato-Light);
+          color: var(--Tomato);
+          border: 1px solid var(--Tomato)
         }
 
       }
@@ -293,14 +329,30 @@ $base: 16;
           .form__email {
             font-size: 1rem;
             line-height: 1.5;
+
+            &:focus {
+              cursor: pointer;
+              outline-color: var(--Grey);
+              outline-width: 0.5px
+            }
           }
 
           .form__submit {
             border: none;
+
+            &:hover {
+              cursor: pointer;
+            }
+
+            &:active {
+              background-color: var(--Tomato);
+              color: white;
+            }
           }
         }
 
       }
+
 
 
     }
@@ -323,6 +375,17 @@ $base: 16;
         min-height: 100%;
         padding-block-start: 0;
         row-gap: size(40, );
+
+        .btn {
+          cursor: pointer;
+        }
+
+        .btn:hover {
+
+          background-color: var(--Tomato);
+          color: white;
+
+        }
 
       }
     }

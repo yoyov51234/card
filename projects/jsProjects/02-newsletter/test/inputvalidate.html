@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <form action="" id="form">
+    <input type="email" required id="input">
+    <button id="submit">submit</button>
+  </form>
+
+  <script>
+    const form = document.getElementById('form');
+    const input = document.getElementById('input');
+    const submit = document.getElementById('submit');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      if (input.validity.valid) {
+        console.log('good email')
+      } else {
+        console.log('bad email')
+      }
+    })
+
+
+
+  </script>
+
+</body>
+
+</html>
