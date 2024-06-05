@@ -216,7 +216,7 @@
     min-height: 100vh;
     justify-content: center;
     align-items: center;
-    padding: 1em;
+    margin: 1em;
   }
   .wrapper .box {
     display: flex;
@@ -228,6 +228,7 @@
     justify-content: center;
     align-items: center;
     max-height: 641px;
+    gap: 4em;
   }
   .wrapper .box.hide {
     display: none;
@@ -249,7 +250,7 @@
   }
   .wrapper .box .main {
     padding: 0;
-    margin-inline: 4em;
+    padding-left: 64px;
   }
   .wrapper .box .main .promots .promots__title {
     font-size: 3.5rem;

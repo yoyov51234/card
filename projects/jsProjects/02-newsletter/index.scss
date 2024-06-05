@@ -275,7 +275,8 @@ $base: 16;
     // margin-inline: 10px;
     justify-content: center;
     align-items: center;
-    padding: 1em;
+    // padding: 1em;
+    margin: 1em;
 
 
     .box {
@@ -290,6 +291,7 @@ $base: 16;
       align-items: center;
       // display: none;
       max-height: 641px;
+      gap: size(64, );
 
 
       &.hide {
@@ -320,9 +322,10 @@ $base: 16;
       }
 
       .main {
-
         padding: 0;
-        margin-inline: size(64, );
+
+        padding-left: 64px;
+        // margin-inline: size(64, );
 
 
         .promots {
@@ -354,6 +357,7 @@ $base: 16;
 
           .form__submit {
             border: none;
+            // padding-inline: size(72, ) size(71, );
 
             &:hover {
               cursor: pointer;
