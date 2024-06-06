@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Event Target Example</title>
+</head>
+
+<body>
+  <div id="outerDiv" style="padding: 20px; background-color: lightblue;">
+    Outer Div
+    <div id="innerDiv" style="padding: 20px; background-color: lightcoral;">
+      Inner Div
+      <button id="myButton">Click Me!</button>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('outerDiv').addEventListener('click', function (event) {
+      console.log('Outer Div clicked');
+      console.log('event.target:', event.target);
+      console.log('event.currentTarget:', event.currentTarget);
+    });
+
+    document.getElementById('innerDiv').addEventListener('click', function (event) {
+      console.log('Inner Div clicked');
+      console.log('event.target:', event.target);
+      console.log('event.currentTarget:', event.currentTarget);
+    });
+
+    document.getElementById('myButton').addEventListener('click', function (event) {
+      console.log('Button clicked');
+      console.log('event.target:', event.target);
+      console.log('event.currentTarget:', event.currentTarget);
+    });
+  </script>
+</body>
+
+</html>

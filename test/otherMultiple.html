@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multiple Select Example</title>
+</head>
+
+<body>
+  <form id="myForm">
+    <label for="fruits">Select your favorite fruits:</label>
+    <select id="fruits" name="fruits" multiple>
+      <option value="apple">Apple</option>
+      <option value="banana">Banana</option>
+      <option value="cherry">Cherry</option>
+      <option value="date">Date</option>
+    </select>
+    <button type="submit">Submit</button>
+  </form>
+
+  <script>
+    const form = document.getElementById('myForm');
+    form.addEventListener('submit', (e) => {
+      e.preventDefault(); // Prevent default form submission
+      const formData = new FormData(form);
+
+      const selectedFruits = [];
+      for (let entry of formData.getAll('fruits')) {
+        selectedFruits.push(entry);
+      }
+
+      console.log('Selected Fruits:', selectedFruits);
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <form id="myForm">
+    <input type="text" name="username" placeholder="Username" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <button type="submit">Submit</button>
+  </form>
+
+  <script>
+
+    // const form = document.querySelector('#myFrom');
+    const form = document.getElementById('myForm');
+    form.addEventListener('submit', (e) => {
+      const form_data = new FormData(form);
+      console.log(form_data);
+      console.log(form_data.values());
+      for (item of form_data.values()) {
+        console.log('this is the item in values ' + item);
+      }
+
+
+      console.log(form_data.entries());
+      for (item of form_data.entries()) {
+        console.log('this is the item in entries ' + item);
+      }
+
+
+      e.preventDefault();
+
+    })
+    // console.log(form);
+
+  </script>
+</body>
+
+</html>

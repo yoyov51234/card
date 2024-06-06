@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FormData Example with Checkboxes</title>
+</head>
+
+<body>
+  <form id="myForm">
+    <h3>Select Your Hobbies:</h3>
+    <label><input type="checkbox" name="hobbies" value="reading"> Reading</label>
+    <label><input type="checkbox" name="hobbies" value="traveling"> Traveling</label>
+    <label><input type="checkbox" name="hobbies" value="sports"> Sports</label>
+    <label><input type="checkbox" name="hobbies" value="music"> Music</label>
+    <button type="submit">Submit</button>
+  </form>
+
+  <script>
+    const form = document.getElementById('myForm');
+    form.addEventListener('submit', (e) => {
+      e.preventDefault(); // Prevent the default form submission
+
+      const formData = new FormData(form);
+
+      // Create an array to hold the selected hobbies
+      const selectedHobbies = [];
+
+      // Iterate over the FormData entries
+      for (let [key, value] of formData.entries()) {
+        if (key === 'hobbies') {
+          selectedHobbies.push(value);
+        }
+      }
+
+      // Display the selected hobbies in the console
+      console.log('Selected Hobbies:', selectedHobbies);
+    });
+  </script>
+</body>
+
+</html>

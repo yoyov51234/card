@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>FormData Example</title>
+</head>
+
+<body>
+  <form id="myForm">
+    <input type="text" name="username" placeholder="Username" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <button type="submit">Submit</button>
+  </form>
+
+  <script>
+    document.getElementById('myForm').addEventListener('submit', function (event) {
+      event.preventDefault(); // Prevent the default form submission
+
+      let form = event.target;
+      // 拿到这个被点击的元素
+      let formData = new FormData(form);
+      // 把这个元素给这个类让他给我转换成object
+
+      // Appending additional data
+      formData.append('additionalData', 'Some extra value');
+
+      // Sending FormData using fetch
+      fetch('https://example.com/submit', {
+        method: 'POST',
+        body: formData
+      })
+        .then(response => response.json())
+        .then(data => console.log(data))
+        .catch(error => console.error('Error:', error));
+    });
+  </script>
+</body>
+
+</html>

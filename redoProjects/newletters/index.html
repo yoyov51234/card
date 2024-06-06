@@ -34,14 +34,15 @@
             <li><span>And much more!</span></li>
           </ul>
         </article>
-        <form action="" class="forms" novalidate>
+        <form action="" class="forms" novalidate id="form">
           <div>
             <div class="lables">
               <label for="input-email" class="label__emails" id="label__emails">Email address</label>
               <label class="hide" id="label-error-message">Valid email
                 required</label>
             </div>
-            <input type="email" placeholder="email@company.com" id="input-email" class="forms__input" required>
+            <input type="email" placeholder="email@company.com" id="input-email" class="forms__input" name="email"
+              required>
           </div>
           <button class="btn button btn-subscirbe" id="btn-subscirbe">Subscribe to monthly newsletter</button>
           <span id="error-message"></span>
