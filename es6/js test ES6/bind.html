@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+</head>
+
+<body>
+
+  <button id="myButton">my nice button</button>
+  <script>
+
+    const button = document.getElementById('myButton');
+    function iKnowYou(name) {
+      console.log(` i know you, you are  ${name}`)
+    }
+
+    button.addEventListener('click', iKnowYou)
+
+
+
+
+    // "use strict"
+    // const dog = {
+    //   name: "balck",
+    //   talk: function () {
+    //     console.log(`my name is ${this.name}`)
+    //   }
+    // }
+
+    // dog.talk();
+
+    // const storeFunc = dog.talk;
+    // const storeFunc1 = dog.talk.bind(dog);
+    // //  const storeFunc =function () {
+    // //   console.log(`my name is ${this.name}`)}
+
+    // storeFunc1();
+
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #result {
+      margin-block: 2em;
+      font-size: 1em;
+      color: purple;
+    }
+
+    #loading {
+      display: none;
+      font-style: italic;
+    }
+  </style>
+</head>
+
+<body>
+
+  <p>click the btn to generate a joke</p>
+  <button id="btn"> Start </button>
+  <div id="result"></div>
+  <p class="loading" id="loading"> Loading...</p>
+
+  <script>
+    const btn = document.getElementById('btn');
+    const div = document.getElementById('result');
+    const loading = document.getElementById('loading');
+    // div.textContent = 'yes';
+
+    btn.addEventListener('click', generateJoke)
+
+    function generateJoke() {
+      const xhr = new XMLHttpRequest();
+
+      // xhr.addEventListener('loadstart', () => {
+      //   div.textContent = "Fetching the code";
+      // })
+
+
+
+      // xhr.addEventListener('loadend', () => {
+      //   div.textContent = xhr.responseText;
+      // })
+
+
+
+
+      // xhr.s
+      // xhr.onloadstart = function () { div.textContent = "Fetching the code"; };
+      // xhr.onloadend = function () { div.textContent = JSON.stringify(xhr.responseText) }
+
+      xhr.onreadystatechange = function () {
+        if (xhr.readyState === XMLHttpRequest.OPENED) {
+          loading.style.display = 'block';
+        }
+
+        if (xhr.readyState === XMLHttpRequest.DONE) {
+          loading.style.display = 'none';
+          if (xhr.status == 200) {
+            const joke = JSON.parse(xhr.responseText);
+            div.textContent = `${joke.setup} - ${joke.punchline}`
+
+          } else {
+            div.textContent = "Failed to fetch the joke.";
+            loading.style.display = 'none';
+          }
+        }
+      }
+
+
+
+      xhr.open(
+        "GET",
+        "https://official-joke-api.appspot.com/random_joke"
+      );
+      xhr.send();
+
+    }
+  </script>
+</body>
+
+</html>

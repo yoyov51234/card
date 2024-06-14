@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <script>
+    var bob = {
+      _name: "Bob",
+      _friends: ["jack", "amily"],
+      printFriends() {
+        this._friends.forEach(f =>
+          console.log(this._name + " knows " + f));
+      }
+    };
+
+    bob.printFriends();
+
+
+  </script>
+
+</body>
+
+</html>

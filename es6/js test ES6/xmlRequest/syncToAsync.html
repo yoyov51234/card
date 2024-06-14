@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sync to async</title>
+</head>
+
+<body>
+  <script>
+
+
+    function doStep1(init, callback) {
+      // const init = init + 1;
+      return callback(init + 1);
+    }
+
+    function doStep2(init, callback) {
+      return callback(init + 2);
+    }
+
+    function doStep3(init) {
+      return callback(init + 3);
+    }
+
+    doStep1(0, doStep2);
+
+    console.log(doStep1(0, doStep2))
+
+
+
+
+  </script>
+
+
+</body>
+
+</html>
